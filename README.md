@@ -30,14 +30,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+for each runs a loop through an array and at the end returns an expected output as part of the method.
+
+map runs through an expected part of an array and returns the exact index order and content
+
 2. What is the difference between a function and a method?
+methods are action that can be preformed on objects
+
+functions are methods that properties are put in to that return the output from that function
 
 3. What is closure?
+a closure is a ending to a scoped area creating new levels of private to global levels of scoped code
 
 4. Describe the four rules of the 'this' keyword.
+this relates back to a scope of the code placed 
+global -written in the outer levels of code anf can be globaly accessed
+implicit - this relates to key value pairs and is locked into the scope it was written
+new - works on an object construction function still calls back to key value pairs but needs avariable outside to add content
+
+explicit - used in call or apply it works on object construction on a new context of the vriBle feeding into the construction
 
 5. Why do we need super() in an extended class?
-
+it re-relates or pulls the parent attributes to the child gchild etc enabling them with the same attributes and prototypes
 ## Project Set up
 
 Follow these steps to set up and work on your project:
