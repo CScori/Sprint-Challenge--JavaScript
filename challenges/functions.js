@@ -6,8 +6,8 @@
   * The last parameter accepts a callback 
   * In the body of the function return the callback with the two parameters that you created
 */
- let consume = function (apples, oranges, callback) {
-   callback(apples + oranges);
+ let consume = function (apples, oranges, cb) {
+   return(cb(apples,oranges));
  }
 
 /* Step 2: Create several functions to callback with consume();
@@ -15,22 +15,22 @@
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
-function add(apples, oranges) {
-  return apples + oranges;
+function add(apples,oranges,cb) {
+  return cb (apples + oranges);
 }
 
-function multiply(apples, oranges) {
-  return apples * oranges;
+function multiply(apples,oranges,cb) {
+  return cb (apples * oranges);
 }
 
-function greeting(name) {
-  console.log(`Hello ${this.firstName} ${this.lastName}, nice to meet you!`);
+function greeting(apples,oranges,cb) {
+  return cb ("Hello" apples, oranges, "nice to meet you!");
 }
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(2,2,add); // 4
+consume(10,16,multiply); // 160
+consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
@@ -38,7 +38,7 @@ function greeting(name) {
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
-
+// because the function Myfunction contains the variable internal which is called in an output statement which allows it to pass through the different levels of scope 
 
 const external = "I'm outside the function";
 
