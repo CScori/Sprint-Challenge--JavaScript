@@ -30,9 +30,9 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
-for each runs a loop through an array and at the end returns an expected output as part of the method.
+foreach executes a callback function once for an afrray element returns undefined. can visit changes 
 
-map runs through an expected part of an array and returns the exact index order and content
+map cant read edited changes  keeps array elements static and wont rerun changes unless called again
 
 2. What is the difference between a function and a method?
 methods are action that can be preformed on objects
@@ -46,7 +46,7 @@ a closure is a ending to a scoped area creating new levels of private to global 
 this relates back to a scope of the code placed 
 global -written in the outer levels of code anf can be globaly accessed
 implicit - this relates to key value pairs and is locked into the scope it was written
-new - works on an object construction function still calls back to key value pairs but needs avariable outside to add content
+new - works on an object construction function still calls back to key value pairs but needs a variable outside to add content
 
 explicit - used in call or apply it works on object construction on a new context of the vriBle feeding into the construction
 
